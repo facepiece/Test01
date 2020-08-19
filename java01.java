@@ -9,7 +9,6 @@ public class Demo01Filter {
 
     //简易的文件搜索器
    public static void  getAllFile(File dir){
-//       System.out.println(dir);
        File[] files = dir.listFiles(new FileFilterImpl());
        for (File f : files) {
            if (f.isDirectory()){
